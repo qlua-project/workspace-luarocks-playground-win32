@@ -1,15 +1,17 @@
 @ECHO OFF
 SETLOCAL ENABLEDELAYEDEXPANSION ENABLEEXTENSIONS
 call "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvarsall.bat" x64 > NUL
-SET "LUA_PATH=C:\Users\ivansoft\Development\TEST\qlua-project\workspace_luarocks\luarocks\lua\?.lua;C:\Users\ivansoft\Development\TEST\qlua-project\workspace_luarocks\luarocks\lua\?\init.lua;%LUA_PATH%"
+SET BATCHDIR=%~dp0
+SET CWD=%BATCHDIR:~0,-1%
+SET "LUA_PATH=%CWD%\lua\?.lua;%CWD%\lua\?\init.lua;%LUA_PATH%"
 IF NOT "%LUA_PATH_5_2%"=="" (
-   SET "LUA_PATH_5_2=C:\Users\ivansoft\Development\TEST\qlua-project\workspace_luarocks\luarocks\lua\?.lua;C:\Users\ivansoft\Development\TEST\qlua-project\workspace_luarocks\luarocks\lua\?\init.lua;%LUA_PATH_5_2%"
+   SET "LUA_PATH_5_2=%CWD%\lua\?.lua;%CWD%\lua\?\init.lua;%LUA_PATH_5_2%"
 )
 IF NOT "%LUA_PATH_5_3%"=="" (
-   SET "LUA_PATH_5_3=C:\Users\ivansoft\Development\TEST\qlua-project\workspace_luarocks\luarocks\lua\?.lua;C:\Users\ivansoft\Development\TEST\qlua-project\workspace_luarocks\luarocks\lua\?\init.lua;%LUA_PATH_5_3%"
+   SET "LUA_PATH_5_3=%CWD%\lua\?.lua;%CWD%\lua\?\init.lua;%LUA_PATH_5_3%"
 )
-SET "PATH=C:\Users\ivansoft\Development\TEST\qlua-project\workspace_luarocks\luarocks;%PATH%"
-"C:\Users\ivansoft\Development\TEST\qlua-project\workspace_luarocks\externals\lua\bin\lua.exe" "C:\Users\ivansoft\Development\TEST\qlua-project\workspace_luarocks\luarocks\luarocks.lua" %*
+SET "PATH=%CWD%;%PATH%"
+"%CWD%\..\externals\lua\bin\lua.exe" "%CWD%\luarocks.lua" %*
 SET EXITCODE=%ERRORLEVEL%
 IF NOT "%EXITCODE%"=="2" GOTO EXITLR
 
