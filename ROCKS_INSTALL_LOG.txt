@@ -116,3 +116,49 @@ html-entities 1.3.1-0 is now installed in .\luarocks/systree (license: MIT)
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+> luarocks install luasec
+Installing https://luarocks.org/luasec-1.3.2-1.src.rock
+
+Error: Could not find header file for OPENSSL
+  No file openssl/ssl.h in c:\external\include
+  No file openssl/ssl.h in c:\windows\system32\include
+You may have to install OPENSSL in your system and/or pass OPENSSL_DIR or OPENSSL_INCDIR to the luarocks command.
+Example: luarocks install luasec OPENSSL_DIR=/usr/local
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+> luarocks install luasec OPENSSL_DIR=..\external_openssl
+Installing https://luarocks.org/luasec-1.3.2-1.src.rock
+
+
+luasec 1.3.2-1 depends on lua >= 5.1 (5.4-1 provided by VM: success)
+luasec 1.3.2-1 depends on luasocket (3.1.0-1 installed: success)
+cl /nologo /MD /O2 -c -Fosrc/options.obj -I.\externals\lua\include src/options.c -DWIN32 -DNDEBUG -D_WINDOWS -D_USRDLL -DLSEC_EXPORTS -DBUFFER_DEBUG -DLSEC_API=__declspec(dllexport) -DWITH_LUASOCKET -DLUASOCKET_DEBUG -DLUASEC_INET_NTOP -DWINVER=0x0501 -D_WIN32_WINNT=0x0501 -DNTDDI_VERSION=0x05010300 -I..\external_openssl\include -Isrc/ -Isrc/luasocket
+options.c
+cl /nologo /MD /O2 -c -Fosrc/config.obj -I.\externals\lua\include src/config.c -DWIN32 -DNDEBUG -D_WINDOWS -D_USRDLL -DLSEC_EXPORTS -DBUFFER_DEBUG -DLSEC_API=__declspec(dllexport) -DWITH_LUASOCKET -DLUASOCKET_DEBUG -DLUASEC_INET_NTOP -DWINVER=0x0501 -D_WIN32_WINNT=0x0501 -DNTDDI_VERSION=0x05010300 -I..\external_openssl\include -Isrc/ -Isrc/luasocket
+config.c
+cl /nologo /MD /O2 -c -Fosrc/ec.obj -I.\externals\lua\include src/ec.c -DWIN32 -DNDEBUG -D_WINDOWS -D_USRDLL -DLSEC_EXPORTS -DBUFFER_DEBUG -DLSEC_API=__declspec(dllexport) -DWITH_LUASOCKET -DLUASOCKET_DEBUG -DLUASEC_INET_NTOP -DWINVER=0x0501 -D_WIN32_WINNT=0x0501 -DNTDDI_VERSION=0x05010300 -I..\external_openssl\include -Isrc/ -Isrc/luasocket
+ec.c
+cl /nologo /MD /O2 -c -Fosrc/x509.obj -I.\externals\lua\include src/x509.c -DWIN32 -DNDEBUG -D_WINDOWS -D_USRDLL -DLSEC_EXPORTS -DBUFFER_DEBUG -DLSEC_API=__declspec(dllexport) -DWITH_LUASOCKET -DLUASOCKET_DEBUG -DLUASEC_INET_NTOP -DWINVER=0x0501 -D_WIN32_WINNT=0x0501 -DNTDDI_VERSION=0x05010300 -I..\external_openssl\include -Isrc/ -Isrc/luasocket
+x509.c
+cl /nologo /MD /O2 -c -Fosrc/context.obj -I.\externals\lua\include src/context.c -DWIN32 -DNDEBUG -D_WINDOWS -D_USRDLL -DLSEC_EXPORTS -DBUFFER_DEBUG -DLSEC_API=__declspec(dllexport) -DWITH_LUASOCKET -DLUASOCKET_DEBUG -DLUASEC_INET_NTOP -DWINVER=0x0501 -D_WIN32_WINNT=0x0501 -DNTDDI_VERSION=0x05010300 -I..\external_openssl\include -Isrc/ -Isrc/luasocket
+context.c
+cl /nologo /MD /O2 -c -Fosrc/ssl.obj -I.\externals\lua\include src/ssl.c -DWIN32 -DNDEBUG -D_WINDOWS -D_USRDLL -DLSEC_EXPORTS -DBUFFER_DEBUG -DLSEC_API=__declspec(dllexport) -DWITH_LUASOCKET -DLUASOCKET_DEBUG -DLUASEC_INET_NTOP -DWINVER=0x0501 -D_WIN32_WINNT=0x0501 -DNTDDI_VERSION=0x05010300 -I..\external_openssl\include -Isrc/ -Isrc/luasocket
+ssl.c
+cl /nologo /MD /O2 -c -Fosrc/luasocket/buffer.obj -I.\externals\lua\include src/luasocket/buffer.c -DWIN32 -DNDEBUG -D_WINDOWS -D_USRDLL -DLSEC_EXPORTS -DBUFFER_DEBUG -DLSEC_API=__declspec(dllexport) -DWITH_LUASOCKET -DLUASOCKET_DEBUG -DLUASEC_INET_NTOP -DWINVER=0x0501 -D_WIN32_WINNT=0x0501 -DNTDDI_VERSION=0x05010300 -I..\external_openssl\include -Isrc/ -Isrc/luasocket
+buffer.c
+cl /nologo /MD /O2 -c -Fosrc/luasocket/io.obj -I.\externals\lua\include src/luasocket/io.c -DWIN32 -DNDEBUG -D_WINDOWS -D_USRDLL -DLSEC_EXPORTS -DBUFFER_DEBUG -DLSEC_API=__declspec(dllexport) -DWITH_LUASOCKET -DLUASOCKET_DEBUG -DLUASEC_INET_NTOP -DWINVER=0x0501 -D_WIN32_WINNT=0x0501 -DNTDDI_VERSION=0x05010300 -I..\external_openssl\include -Isrc/ -Isrc/luasocket
+io.c
+cl /nologo /MD /O2 -c -Fosrc/luasocket/timeout.obj -I.\externals\lua\include src/luasocket/timeout.c -DWIN32 -DNDEBUG -D_WINDOWS -D_USRDLL -DLSEC_EXPORTS -DBUFFER_DEBUG -DLSEC_API=__declspec(dllexport) -DWITH_LUASOCKET -DLUASOCKET_DEBUG -DLUASEC_INET_NTOP -DWINVER=0x0501 -D_WIN32_WINNT=0x0501 -DNTDDI_VERSION=0x05010300 -I..\external_openssl\include -Isrc/ -Isrc/luasocket
+timeout.c
+cl /nologo /MD /O2 -c -Fosrc/luasocket/wsocket.obj -I.\externals\lua\include src/luasocket/wsocket.c -DWIN32 -DNDEBUG -D_WINDOWS -D_USRDLL -DLSEC_EXPORTS -DBUFFER_DEBUG -DLSEC_API=__declspec(dllexport) -DWITH_LUASOCKET -DLUASOCKET_DEBUG -DLUASEC_INET_NTOP -DWINVER=0x0501 -D_WIN32_WINNT=0x0501 -DNTDDI_VERSION=0x05010300 -I..\external_openssl\include -Isrc/ -Isrc/luasocket
+wsocket.c
+link -dll -def:ssl.def -out:%TEMP%\luarocks_build-LuaSec-1.3.2-1-2683740\ssl.dll .\externals\lua\lib\lua54.lib src/options.obj src/config.obj src/ec.obj src/x509.obj src/context.obj src/ssl.obj src/luasocket/buffer.obj src/luasocket/io.obj src/luasocket/timeout.obj src/luasocket/wsocket.obj -libpath:..\external_openssl\lib -libpath:..\external_openssl\bin libssl.lib libcrypto.lib ws2_32.lib
+Microsoft (R) Incremental Linker Version 14.43.34808.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+   Creating library %TEMP%\luarocks_build-LuaSec-1.3.2-1-2683740\ssl.lib and object %TEMP%\luarocks_build-LuaSec-1.3.2-1-2683740\ssl.exp
+luasec 1.3.2-1 is now installed in .\luarocks/systree (license: MIT)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
