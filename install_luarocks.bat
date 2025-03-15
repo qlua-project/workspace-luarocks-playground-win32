@@ -16,8 +16,9 @@ call INSTALL /P "%PREFIX%" ^
              /FORCECONFIG ^
              /NOREG ^
              /LUA "%LUA_DIR%" ^
-             /TREE %CWD% ^
-             /CONFIG %PREFIX%\luarocks
+             /TREE %CWD%\Rocktree ^
+             /CONFIG %PREFIX% %*
+             rem /CONFIG %PREFIX%\luarocks
 
 popd
 
