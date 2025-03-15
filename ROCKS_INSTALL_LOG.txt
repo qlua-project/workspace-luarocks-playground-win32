@@ -12,6 +12,19 @@ Resolving deltas: 100% (253/253), done.
 
 Error: This rockspec for telegram-bot-lua does not support win32, windows platforms.
 
+>>>
+>>> https://github.com/wrxck/telegram-bot-lua/blob/main/telegram-bot-lua-2.0-0.rockspec
+>>>   dependencies = {
+>>>       "dkjson >= 2.5-2",
+>>>       "lpeg >= 1.0.1-1",
+>>>       "luasec >= 0.6-1",
+>>>       "luasocket >= 3.0rc1-2",
+>>>       "multipart-post >= 1.1-1",
+>>>       "luautf8 >= 0.1.1-1",
+>>>       "html-entities >= 1.3.1-0"
+>>>   }
+>>>
+
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 > luarocks install dkjson
