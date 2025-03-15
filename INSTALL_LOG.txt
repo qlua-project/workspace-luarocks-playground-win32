@@ -1,0 +1,186 @@
+
+********************************************************************************************
+
+INSTALL /P ".\luarocks"
+   /NOADMIN
+   /FORCECONFIG
+   /NOREG
+   /LUA ".\externals\lua"
+
+
+========================
+== Checking system... ==
+========================
+
+Attempting to install without admin privileges...
+Looking for Lua interpreter
+    checking .\externals\lua
+       Found lua.exe, testing it...
+Interpreter found, now looking for link libraries...
+    checking for .\externals\lua\lua5.4.lib
+    checking for .\externals\lua\lua54.lib
+    checking for .\externals\lua\liblua54.a
+    checking for .\externals\lua\lua5.4.dll
+    checking for .\externals\lua\lua54.dll
+    checking for .\externals\lua\liblua.dll.a
+    checking for .\externals\lua\lib\lua5.4.lib
+    checking for .\externals\lua\lib\lua54.lib
+       Found lua54.lib
+Link library found, now looking for headers...
+    checking for .\externals\lua\include\lua\5.4\lua.h
+    checking for .\externals\lua\include\lua54\lua.h
+    checking for .\externals\lua\include\lua5.4\lua.h
+    checking for .\externals\lua\include\lua.h
+       Found lua.h
+Headers found, checking runtime to use...
+    .\externals\lua\bin\lua.exe uses VCRUNTIME140.DLL as runtime
+Runtime check completed.
+arch: 8664 -> IMAGE_FILE_MACHINE_AMD64
+Looking for Microsoft toolchain matching runtime VCRUNTIME140 and architecture x86_64
+    Visual Studio 2017 or higher found in: C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools
+
+==========================
+== System check results ==
+==========================
+
+Will configure LuaRocks with the following paths:
+LuaRocks        : .\luarocks
+Config file     : .\luarocks\config-5.4.lua
+Rocktree        : .\externals\lua\
+
+Lua interpreter : .\externals\lua\bin\lua.exe
+    binaries    : .\externals\lua\bin
+    libraries   : .\externals\lua\lib
+    includes    : .\externals\lua\include
+    architecture: x86_64
+    binary link : lua54.lib with runtime VCRUNTIME140.dll
+
+Compiler        : Microsoft, using; call "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvarsall.bat" x64 > NUL
+
+Press <ENTER> to start installing, or press <CTRL>+<C> to abort. Use install /? for installation options.
+
+
+********************************************************************************************
+                                    /SELFCONTAINED
+********************************************************************************************
+
+INSTALL /P ".\luarocks" ^
+        /SELFCONTAINED ^
+        /NOADMIN ^
+        /FORCECONFIG ^
+        /NOREG ^
+        /LUA ".\externals\lua"
+
+    └───luarocks
+        ├───lua
+        │   ├───compat53
+        │   └───luarocks
+        │       ├───admin
+        │       │   └───cmd
+        │       ├───build
+        │       ├───cmd
+        │       ├───core
+        │       │   └───types
+        │       ├───fetch
+        │       ├───fs
+        │       │   ├───unix
+        │       │   └───win32
+        │       ├───manif
+        │       ├───test
+        │       ├───tools
+        │       ├───type
+        │       ├───upload
+        │       └───vendor
+        ├───systree
+        └───tools
+
+========================
+== Checking system... ==
+========================
+
+Attempting to install without admin privileges...
+Looking for Lua interpreter
+    checking .\externals\lua
+       Found lua.exe, testing it...
+Interpreter found, now looking for link libraries...
+    checking for .\externals\lua\lua5.4.lib
+    checking for .\externals\lua\lua54.lib
+    checking for .\externals\lua\liblua54.a
+    checking for .\externals\lua\lua5.4.dll
+    checking for .\externals\lua\lua54.dll
+    checking for .\externals\lua\liblua.dll.a
+    checking for .\externals\lua\lib\lua5.4.lib
+    checking for .\externals\lua\lib\lua54.lib
+       Found lua54.lib
+Link library found, now looking for headers...
+    checking for .\externals\lua\include\lua\5.4\lua.h
+    checking for .\externals\lua\include\lua54\lua.h
+    checking for .\externals\lua\include\lua5.4\lua.h
+    checking for .\externals\lua\include\lua.h
+       Found lua.h
+Headers found, checking runtime to use...
+    .\externals\lua\bin\lua.exe uses VCRUNTIME140.DLL as runtime
+Runtime check completed.
+arch: 8664 -> IMAGE_FILE_MACHINE_AMD64
+Looking for Microsoft toolchain matching runtime VCRUNTIME140 and architecture x86_64
+    Visual Studio 2017 or higher found in: C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools
+
+==========================
+== System check results ==
+==========================
+
+Will configure LuaRocks with the following paths:
+LuaRocks        : .\luarocks
+Config file     : .\luarocks\config-5.4.lua
+Rocktree        : .\luarocks\systree
+
+Lua interpreter : .\externals\lua\bin\lua.exe
+    binaries    : .\externals\lua\bin
+    libraries   : .\externals\lua\lib
+    includes    : .\externals\lua\include
+    architecture: x86_64
+    binary link : lua54.lib with runtime VCRUNTIME140.dll
+
+Compiler        : Microsoft, using; call "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvarsall.bat" x64 > NUL
+
+Press <ENTER> to start installing, or press <CTRL>+<C> to abort. Use install /? for installation options.
+
+============================
+== Installing LuaRocks... ==
+============================
+
+Installing LuaRocks in .\luarocks...
+Created LuaRocks command: .\luarocks\luarocks.bat
+Created LuaRocks command: .\luarocks\luarocks-admin.bat
+
+Configuring LuaRocks...
+Created LuaRocks hardcoded settings file: .\luarocks\lua\luarocks\core\hardcoded.lua
+Created LuaRocks config file: .\luarocks\config-5.4.lua
+
+Creating rocktrees...
+Created system rocktree    : ".\luarocks\systree"
+Created local user rocktree: "C:\Users\ivansoft\AppData\Roaming\LuaRocks"
+
+============================
+== LuaRocks is installed! ==
+============================
+
+You may want to add the following elements to your paths;
+Lua interpreter;
+  PATH     :   .\externals\lua\bin
+  PATHEXT  :   .LUA
+LuaRocks;
+  PATH     :   .\luarocks
+  LUA_PATH :   .\luarocks\lua\?.lua;.\luarocks\lua\?\init.lua
+Local user rocktree (Note: %APPDATA% is user dependent);
+  PATH     :   %APPDATA%\LuaRocks\bin
+  LUA_PATH :   %APPDATA%\LuaRocks\share\lua\5.4\?.lua;%APPDATA%\LuaRocks\share\lua\5.4\?\init.lua
+  LUA_CPATH:   %APPDATA%\LuaRocks\lib\lua\5.4\?.dll
+System rocktree
+  PATH     :   .\luarocks\systree\bin
+  LUA_PATH :   .\luarocks\systree\share\lua\5.4\?.lua;.\luarocks\systree\share\lua\5.4\?\init.lua
+  LUA_CPATH:   .\luarocks\systree\lib\lua\5.4\?.dll
+
+Note that the %APPDATA% element in the paths above is user specific and it MUST be replaced by its actual value.
+For the current user that value is: C:\Users\ivansoft\AppData\Roaming.
+
