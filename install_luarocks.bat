@@ -1,4 +1,6 @@
-rem @echo off
+@echo off
+
+setlocal
 
 SET BATCHDIR=%~dp0
 SET CWD=%BATCHDIR:~0,-1%
@@ -7,15 +9,19 @@ SET PREFIX=%CWD%\luarocks
 SET LUA_DIR=%CWD%\externals\lua
 SET LUAROCKS_DIR=%CWD%\externals\luarocks
 
-"%LUAROCKS_DIR%\INSTALL" /P "%PREFIX%" ^
-        /NOADMIN ^
-        /FORCECONFIG ^
-        /NOREG ^
-        /LUA "%LUA_DIR%"
-        /TREE %CWD%
-        /CONFIG %PREFIX%\luarocks
+pushd %LUAROCKS_DIR%
 
+call INSTALL /P "%PREFIX%" ^
+             /NOADMIN ^
+             /FORCECONFIG ^
+             /NOREG ^
+             /LUA "%LUA_DIR%" ^
+             /TREE %CWD% ^
+             /CONFIG %PREFIX%\luarocks
 
+popd
+
+endlocal
 
 :: LuaRocks 3.11.x installer.
 ::
