@@ -1,7 +1,7 @@
 rocks_trees = {
-    home..[[/luarocks]],
+    sysconfdir..[[/../rockstree]],
     { name = [[user]],
-         root    = home..[[/luarocks]],
+         root    = sysconfdir..[[/../rockstree]],
     },
     { name = [[system]],
          root    = sysconfdir..[[/systree]],
