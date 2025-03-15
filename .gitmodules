@@ -1,3 +1,7 @@
 [submodule "luarocks"]
 	path = externals/luarocks
 	url = https://github.com/qlua-project/luarocks
+[submodule "lua"]
+	path = externals/lua
+	url = https://github.com/qlua-project/cmake-lua-win64
+	branch = v5.4.1
