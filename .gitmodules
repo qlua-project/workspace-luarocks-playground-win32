@@ -1,0 +1,3 @@
+[submodule "luarocks"]
+	path = externals/luarocks
+	url = https://github.com/qlua-project/luarocks
