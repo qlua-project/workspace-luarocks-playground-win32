@@ -11,14 +11,23 @@ SET LUAROCKS_DIR=%CWD%\externals\luarocks
 
 pushd %LUAROCKS_DIR%
 
+:: call INSTALL /P "%PREFIX%" ^
+::              /NOADMIN ^
+::              /FORCECONFIG ^
+::              /NOREG ^
+::              /LUA "%LUA_DIR%" ^
+::              /TREE %CWD%\Rocktree ^
+::              /CONFIG %PREFIX% %*
+::              rem /CONFIG %PREFIX%\luarocks
+
 call INSTALL /P "%PREFIX%" ^
+             /SELFCONTAINED ^
              /NOADMIN ^
              /FORCECONFIG ^
              /NOREG ^
-             /LUA "%LUA_DIR%" ^
-             /TREE %CWD%\Rocktree ^
-             /CONFIG %PREFIX% %*
-             rem /CONFIG %PREFIX%\luarocks
+             /LUA "%LUA_DIR%" %*
+             rem /CONFIG %PREFIX%
+             rem /TREE %CWD%\Rocktree ^
 
 popd
 
