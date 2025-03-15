@@ -162,3 +162,19 @@ luasec 1.3.2-1 is now installed in .\luarocks/systree (license: MIT)
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+> luarocks install luautf8
+Installing https://luarocks.org/luautf8-0.1.6-1.src.rock
+
+
+luautf8 0.1.6-1 depends on lua >= 5.1 (5.4-1 provided by VM: success)
+cl /nologo /MD /O2 -c -Folutf8lib.obj -I.\externals\lua\include lutf8lib.c
+lutf8lib.c
+link -dll -def:lua-utf8.def -out:%TEMP%\luarocks_build-luautf8-0.1.6-1-1887906\lua-utf8.dll .\externals\lua\lib\lua54.lib lutf8lib.obj
+Microsoft (R) Incremental Linker Version 14.43.34808.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+   Creating library %TEMP%\luarocks_build-luautf8-0.1.6-1-1887906\lua-utf8.lib and object %TEMP%\luarocks_build-luautf8-0.1.6-1-1887906\lua-utf8.exp
+luautf8 0.1.6-1 is now installed in .\luarocks/systree (license: MIT)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
