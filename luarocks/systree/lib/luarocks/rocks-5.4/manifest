@@ -21,6 +21,21 @@ dependencies = {
          }
       }
    },
+   ["html-entities"] = {
+      ["1.3.1-0"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
    lpeg = {
       ["1.1.0-2"] = {
          {
@@ -75,6 +90,9 @@ modules = {
    dkjson = {
       "dkjson/2.8-1"
    },
+   htmlEntities = {
+      "html-entities/1.3.1-0"
+   },
    lpeg = {
       "lpeg/1.1.0-2"
    },
@@ -127,6 +145,18 @@ repository = {
             dependencies = {},
             modules = {
                dkjson = "dkjson.lua"
+            }
+         }
+      }
+   },
+   ["html-entities"] = {
+      ["1.3.1-0"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               htmlEntities = "htmlEntities.lua"
             }
          }
       }
