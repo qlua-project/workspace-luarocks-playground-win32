@@ -222,3 +222,19 @@ inspect 3.1.3-0 is now installed in .\luarocks/systree (license: MIT <http://ope
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+> luarocks install luafilesystem
+Installing https://luarocks.org/luafilesystem-1.8.0-1.src.rock
+
+
+luafilesystem 1.8.0-1 depends on lua >= 5.1 (5.4-1 provided by VM: success)
+cl /nologo /MD /O2 -c -Fosrc/lfs.obj -I.\externals\lua\include src/lfs.c
+lfs.c
+link -dll -def:lfs.def -out:%TEMP%\luarocks_build-LuaFileSystem-1.8.0-1-5338829\lfs.dll .\externals\lua\lib\lua54.lib src/lfs.obj
+Microsoft (R) Incremental Linker Version 14.43.34808.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+   Creating library %TEMP%\luarocks_build-LuaFileSystem-1.8.0-1-5338829\lfs.lib and object %TEMP%\luarocks_build-LuaFileSystem-1.8.0-1-5338829\lfs.exp
+luafilesystem 1.8.0-1 is now installed in .\luarocks/systree (license: MIT/X11)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
