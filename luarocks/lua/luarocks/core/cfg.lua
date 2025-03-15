@@ -90,6 +90,7 @@ do
       local e
       e = {
          home = cfg.home,
+         sysconfdir = cfg.sysconfdir,
          lua_version = cfg.lua_version,
          platforms = platforms_copy,
          processor = cfg.target_cpu,   -- remains for compat reasons

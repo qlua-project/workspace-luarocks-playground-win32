@@ -4,7 +4,7 @@ rocks_trees = {
          root    = home..[[/luarocks]],
     },
     { name = [[system]],
-         root    = [[C:\Users\ivansoft\Development\TEST\qlua-project\workspace_luarocks\luarocks\systree]],
+         root    = sysconfdir..[[/systree]],
     },
 }
 variables = {

@@ -239,6 +239,7 @@ end
 function persist.load_config_file_if_basic(filename, config)
    local env = {
       home = config.home,
+      sysconfdir = config.sysconfdir,
    }
    local result, _, errcode = persist.load_into_table(filename, env)
    if errcode == "load" or errcode == "run" then
