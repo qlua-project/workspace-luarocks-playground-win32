@@ -85,6 +85,21 @@ dependencies = {
          }
       }
    },
+   luautf8 = {
+      ["0.1.6-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
    ["multipart-post"] = {
       ["1.4-1"] = {
          {
@@ -117,6 +132,9 @@ modules = {
    },
    ltn12 = {
       "luasocket/3.1.0-1"
+   },
+   ["lua-utf8"] = {
+      "luautf8/0.1.6-1"
    },
    mime = {
       "luasocket/3.1.0-1"
@@ -232,6 +250,18 @@ repository = {
                ["socket.smtp"] = "socket\\smtp.lua",
                ["socket.tp"] = "socket\\tp.lua",
                ["socket.url"] = "socket\\url.lua"
+            }
+         }
+      }
+   },
+   luautf8 = {
+      ["0.1.6-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               ["lua-utf8"] = "lua-utf8.dll"
             }
          }
       }
