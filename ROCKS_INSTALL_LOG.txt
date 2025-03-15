@@ -191,3 +191,24 @@ luautf8 0.1.6-1 is now installed in .\luarocks/systree (license: MIT)
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+> luarocks install lua-cjson
+Installing https://luarocks.org/lua-cjson-2.1.0.10-1.src.rock
+
+
+lua-cjson 2.1.0.10-1 depends on lua >= 5.1 (5.4-1 provided by VM: success)
+cl /nologo /MD /O2 -c -Folua_cjson.obj -I.\externals\lua\include lua_cjson.c -DDISABLE_INVALID_NUMBERS -DUSE_INTERNAL_ISINF
+lua_cjson.c
+cl /nologo /MD /O2 -c -Fostrbuf.obj -I.\externals\lua\include strbuf.c -DDISABLE_INVALID_NUMBERS -DUSE_INTERNAL_ISINF
+strbuf.c
+strbuf.c(98): warning C4311: 'type cast': pointer truncation from 'strbuf_t *' to 'long'
+strbuf.c(172): warning C4311: 'type cast': pointer truncation from 'strbuf_t *' to 'long'
+cl /nologo /MD /O2 -c -Fofpconv.obj -I.\externals\lua\include fpconv.c -DDISABLE_INVALID_NUMBERS -DUSE_INTERNAL_ISINF
+fpconv.c
+link -dll -def:cjson.def -out:%TEMP%\luarocks_build-lua-cjson-2.1.0.10-1-9138891\cjson.dll .\externals\lua\lib\lua54.lib lua_cjson.obj strbuf.obj fpconv.obj
+Microsoft (R) Incremental Linker Version 14.43.34808.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+   Creating library %TEMP%\luarocks_build-lua-cjson-2.1.0.10-1-9138891\cjson.lib and object %TEMP%\luarocks_build-lua-cjson-2.1.0.10-1-9138891\cjson.exp
+lua-cjson 2.1.0.10-1 is now installed in .\luarocks/systree (license: MIT)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
