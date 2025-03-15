@@ -1,0 +1,118 @@
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+> luarocks install telegram-bot-lua
+Installing https://luarocks.org/telegram-bot-lua-2.0-0.rockspec
+Cloning into 'telegram-bot-lua'...
+remote: Enumerating objects: 426, done.
+remote: Counting objects: 100% (85/85), done.
+remote: Compressing objects: 100% (30/30), done.
+remote: Total 426 (delta 59), reused 75 (delta 53), pack-reused 341 (from 1)
+Receiving objects: 100% (426/426), 156.38 KiB | 1.29 MiB/s, done.
+Resolving deltas: 100% (253/253), done.
+
+Error: This rockspec for telegram-bot-lua does not support win32, windows platforms.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+> luarocks install dkjson
+Installing https://luarocks.org/dkjson-2.8-1.src.rock
+
+dkjson 2.8-1 depends on lua >= 5.1, < 5.5 (5.4-1 provided by VM: success)
+No existing manifest. Attempting to rebuild...
+dkjson 2.8-1 is now installed in .\luarocks/systree (license: MIT/X11)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+> luarocks install lpeg
+Installing https://luarocks.org/lpeg-1.1.0-2.src.rock
+
+
+lpeg 1.1.0-2 depends on lua >= 5.1 (5.4-1 provided by VM: success)
+cl /nologo /MD /O2 -c -Folpcap.obj -I.\externals\lua\include lpcap.c
+lpcap.c
+cl /nologo /MD /O2 -c -Folpcode.obj -I.\externals\lua\include lpcode.c
+lpcode.c
+cl /nologo /MD /O2 -c -Folpcset.obj -I.\externals\lua\include lpcset.c
+lpcset.c
+cl /nologo /MD /O2 -c -Folpprint.obj -I.\externals\lua\include lpprint.c
+lpprint.c
+cl /nologo /MD /O2 -c -Folptree.obj -I.\externals\lua\include lptree.c
+lptree.c
+cl /nologo /MD /O2 -c -Folpvm.obj -I.\externals\lua\include lpvm.c
+lpvm.c
+link -dll -def:lpeg.def -out:%TEMP%\luarocks_build-LPeg-1.1.0-2-1364372\lpeg.dll .\externals\lua\lib\lua54.lib lpcap.obj lpcode.obj lpcset.obj lpprint.obj lptree.obj lpvm.obj
+Microsoft (R) Incremental Linker Version 14.43.34808.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+   Creating library %TEMP%\luarocks_build-LPeg-1.1.0-2-1364372\lpeg.lib and object %TEMP%\luarocks_build-LPeg-1.1.0-2-1364372\lpeg.exp
+lpeg 1.1.0-2 is now installed in .\luarocks/systree (license: MIT/X11)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+> luarocks install multipart-post
+Installing https://luarocks.org/multipart-post-1.4-1.src.rock
+
+Missing dependencies for multipart-post 1.4-1:
+   luasocket (not installed)
+
+multipart-post 1.4-1 depends on lua >= 5.1 (5.4-1 provided by VM: success)
+multipart-post 1.4-1 depends on luasocket (not installed)
+Installing https://luarocks.org/luasocket-3.1.0-1.src.rock
+
+
+luasocket 3.1.0-1 depends on lua >= 5.1 (5.4-1 provided by VM: success)
+cl /nologo /MD /O2 -c -Fosrc/luasocket.obj -I.\externals\lua\include src/luasocket.c -DLUASOCKET_DEBUG -DNDEBUG -Ic:\windows\system32\include
+luasocket.c
+cl /nologo /MD /O2 -c -Fosrc/timeout.obj -I.\externals\lua\include src/timeout.c -DLUASOCKET_DEBUG -DNDEBUG -Ic:\windows\system32\include
+timeout.c
+cl /nologo /MD /O2 -c -Fosrc/buffer.obj -I.\externals\lua\include src/buffer.c -DLUASOCKET_DEBUG -DNDEBUG -Ic:\windows\system32\include
+buffer.c
+cl /nologo /MD /O2 -c -Fosrc/io.obj -I.\externals\lua\include src/io.c -DLUASOCKET_DEBUG -DNDEBUG -Ic:\windows\system32\include
+io.c
+cl /nologo /MD /O2 -c -Fosrc/auxiliar.obj -I.\externals\lua\include src/auxiliar.c -DLUASOCKET_DEBUG -DNDEBUG -Ic:\windows\system32\include
+auxiliar.c
+cl /nologo /MD /O2 -c -Fosrc/options.obj -I.\externals\lua\include src/options.c -DLUASOCKET_DEBUG -DNDEBUG -Ic:\windows\system32\include
+options.c
+cl /nologo /MD /O2 -c -Fosrc/inet.obj -I.\externals\lua\include src/inet.c -DLUASOCKET_DEBUG -DNDEBUG -Ic:\windows\system32\include
+inet.c
+cl /nologo /MD /O2 -c -Fosrc/except.obj -I.\externals\lua\include src/except.c -DLUASOCKET_DEBUG -DNDEBUG -Ic:\windows\system32\include
+except.c
+cl /nologo /MD /O2 -c -Fosrc/select.obj -I.\externals\lua\include src/select.c -DLUASOCKET_DEBUG -DNDEBUG -Ic:\windows\system32\include
+select.c
+cl /nologo /MD /O2 -c -Fosrc/tcp.obj -I.\externals\lua\include src/tcp.c -DLUASOCKET_DEBUG -DNDEBUG -Ic:\windows\system32\include
+tcp.c
+cl /nologo /MD /O2 -c -Fosrc/udp.obj -I.\externals\lua\include src/udp.c -DLUASOCKET_DEBUG -DNDEBUG -Ic:\windows\system32\include
+udp.c
+cl /nologo /MD /O2 -c -Fosrc/compat.obj -I.\externals\lua\include src/compat.c -DLUASOCKET_DEBUG -DNDEBUG -Ic:\windows\system32\include
+compat.c
+cl /nologo /MD /O2 -c -Fosrc/wsocket.obj -I.\externals\lua\include src/wsocket.c -DLUASOCKET_DEBUG -DNDEBUG -Ic:\windows\system32\include
+wsocket.c
+link -dll -def:core.def -out:%TEMP%\luarocks_build-LuaSocket-3.1.0-1-2868692\socket\core.dll .\externals\lua\lib\lua54.lib src/luasocket.obj src/timeout.obj src/buffer.obj src/io.obj src/auxiliar.obj src/options.obj src/inet.obj src/except.obj src/select.obj src/tcp.obj src/udp.obj src/compat.obj src/wsocket.obj ws2_32.lib
+Microsoft (R) Incremental Linker Version 14.43.34808.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+   Creating library %TEMP%\luarocks_build-LuaSocket-3.1.0-1-2868692\socket\core.lib and object %TEMP%\luarocks_build-LuaSocket-3.1.0-1-2868692\socket\core.exp
+cl /nologo /MD /O2 -c -Fosrc/mime.obj -I.\externals\lua\include src/mime.c -DLUASOCKET_DEBUG -DNDEBUG -Ic:\windows\system32\include
+mime.c
+cl /nologo /MD /O2 -c -Fosrc/compat.obj -I.\externals\lua\include src/compat.c -DLUASOCKET_DEBUG -DNDEBUG -Ic:\windows\system32\include
+compat.c
+link -dll -def:core.def -out:%TEMP%\luarocks_build-LuaSocket-3.1.0-1-2868692\mime\core.dll .\externals\lua\lib\lua54.lib src/mime.obj src/compat.obj -libpath:c:\windows\system32
+Microsoft (R) Incremental Linker Version 14.43.34808.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+   Creating library %TEMP%\luarocks_build-LuaSocket-3.1.0-1-2868692\mime\core.lib and object %TEMP%\luarocks_build-LuaSocket-3.1.0-1-2868692\mime\core.exp
+luasocket 3.1.0-1 is now installed in .\luarocks/systree (license: MIT)
+
+multipart-post 1.4-1 is now installed in .\luarocks/systree (license: MIT/X11)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+> luarocks install html-entities
+Installing https://luarocks.org/html-entities-1.3.1-0.rockspec
+
+
+html-entities 1.3.1-0 depends on lua >= 5.1 (5.4-1 provided by VM: success)
+html-entities 1.3.1-0 is now installed in .\luarocks/systree (license: MIT)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
