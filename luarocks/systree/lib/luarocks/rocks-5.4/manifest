@@ -50,6 +50,25 @@ dependencies = {
             name = "lua"
          }
       }
+   },
+   ["multipart-post"] = {
+      ["1.4-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         },
+         {
+            constraints = {},
+            name = "luasocket"
+         }
+      }
    }
 }
 modules = {
@@ -67,6 +86,9 @@ modules = {
    },
    ["mime.core"] = {
       "luasocket/3.1.0-1"
+   },
+   ["multipart-post"] = {
+      "multipart-post/1.4-1"
    },
    re = {
       "lpeg/1.1.0-2"
@@ -140,6 +162,20 @@ repository = {
                ["socket.smtp"] = "socket\\smtp.lua",
                ["socket.tp"] = "socket\\tp.lua",
                ["socket.url"] = "socket\\url.lua"
+            }
+         }
+      }
+   },
+   ["multipart-post"] = {
+      ["1.4-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               luasocket = "3.1.0-1"
+            },
+            modules = {
+               ["multipart-post"] = "multipart-post.lua"
             }
          }
       }
