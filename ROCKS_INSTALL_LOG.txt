@@ -273,3 +273,12 @@ Example: luarocks install luasql-sqlite3 SQLITE_DIR=/usr/local
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+> luarocks install penlight
+Installing https://luarocks.org/penlight-1.14.0-2.src.rock
+
+
+penlight 1.14.0-2 depends on luafilesystem (1.8.0-1 installed: success)
+penlight 1.14.0-2 is now installed in .\luarocks/systree (license: MIT/X11)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
