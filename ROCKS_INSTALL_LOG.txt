@@ -337,3 +337,14 @@ say 1.4.1-3 is now installed in .\luarocks/systree (license: MIT)
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+> luarocks install luacheck
+Installing https://luarocks.org/luacheck-1.2.0-1.src.rock
+
+
+luacheck 1.2.0-1 depends on lua >= 5.1 (5.4-1 provided by VM: success)
+luacheck 1.2.0-1 depends on argparse >= 0.6.0 (0.7.1-1 installed: success)
+luacheck 1.2.0-1 depends on luafilesystem >= 1.6.3 (1.8.0-1 installed: success)
+luacheck 1.2.0-1 is now installed in .\luarocks/systree (license: MIT)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
