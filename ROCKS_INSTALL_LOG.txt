@@ -300,3 +300,22 @@ lua_cliargs 3.0.2-1 is now installed in .\luarocks/systree (license: MIT)
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+> luarocks install santoku
+Installing https://luarocks.org/santoku-0.0.246-1.rockspec
+
+
+santoku 0.0.246-1 depends on lua >= 5.1 (5.4-1 provided by VM: success)
+Warning: unmatched variable LDSHARED
+Warning: unmatched variable NM
+Warning: unmatched variable CXX
+
+Microsoft (R) Program Maintenance Utility Version 14.43.34808.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+Makefile(1) : fatal error U1104: Unknown text function 'shell'
+Stop.
+
+Error: Build error: Failed building.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
