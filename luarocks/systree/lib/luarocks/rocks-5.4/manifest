@@ -7,6 +7,27 @@ commands = {
    }
 }
 dependencies = {
+   argparse = {
+      ["0.7.1-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               },
+               {
+                  op = "<",
+                  version = {
+                     5, 5, string = "5.5"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
    dkjson = {
       ["2.8-1"] = {
          {
@@ -181,6 +202,9 @@ dependencies = {
    }
 }
 modules = {
+   argparse = {
+      "argparse/0.7.1-1"
+   },
    cjson = {
       "lua-cjson/2.1.0.10-1"
    },
@@ -375,6 +399,18 @@ modules = {
    }
 }
 repository = {
+   argparse = {
+      ["0.7.1-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               argparse = "argparse.lua"
+            }
+         }
+      }
+   },
    dkjson = {
       ["2.8-1"] = {
          {
