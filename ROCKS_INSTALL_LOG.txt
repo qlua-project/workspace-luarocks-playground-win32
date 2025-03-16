@@ -282,3 +282,21 @@ penlight 1.14.0-2 is now installed in .\luarocks/systree (license: MIT/X11)
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+> luarocks install argparse
+Installing https://luarocks.org/argparse-0.7.1-1.src.rock
+
+
+argparse 0.7.1-1 depends on lua >= 5.1, < 5.5 (5.4-1 provided by VM: success)
+argparse 0.7.1-1 is now installed in .\luarocks/systree (license: MIT)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+> luarocks install lua_cliargs
+Installing https://luarocks.org/lua_cliargs-3.0.2-1.src.rock
+
+
+lua_cliargs 3.0.2-1 depends on lua >= 5.1 (5.4-1 provided by VM: success)
+lua_cliargs 3.0.2-1 is now installed in .\luarocks/systree (license: MIT)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
