@@ -109,6 +109,21 @@ dependencies = {
          }
       }
    },
+   lua_cliargs = {
+      ["3.0.2-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
    luafilesystem = {
       ["1.8.0-1"] = {
          {
@@ -210,6 +225,48 @@ modules = {
    },
    ["cjson.util"] = {
       "lua-cjson/2.1.0.10-1"
+   },
+   cliargs = {
+      "lua_cliargs/3.0.2-1"
+   },
+   ["cliargs.config_loader"] = {
+      "lua_cliargs/3.0.2-1"
+   },
+   ["cliargs.constants"] = {
+      "lua_cliargs/3.0.2-1"
+   },
+   ["cliargs.core"] = {
+      "lua_cliargs/3.0.2-1"
+   },
+   ["cliargs.parser"] = {
+      "lua_cliargs/3.0.2-1"
+   },
+   ["cliargs.printer"] = {
+      "lua_cliargs/3.0.2-1"
+   },
+   ["cliargs.utils.disect"] = {
+      "lua_cliargs/3.0.2-1"
+   },
+   ["cliargs.utils.disect_argument"] = {
+      "lua_cliargs/3.0.2-1"
+   },
+   ["cliargs.utils.filter"] = {
+      "lua_cliargs/3.0.2-1"
+   },
+   ["cliargs.utils.lookup"] = {
+      "lua_cliargs/3.0.2-1"
+   },
+   ["cliargs.utils.shallow_copy"] = {
+      "lua_cliargs/3.0.2-1"
+   },
+   ["cliargs.utils.split"] = {
+      "lua_cliargs/3.0.2-1"
+   },
+   ["cliargs.utils.trim"] = {
+      "lua_cliargs/3.0.2-1"
+   },
+   ["cliargs.utils.wordwrap"] = {
+      "lua_cliargs/3.0.2-1"
    },
    dkjson = {
       "dkjson/2.8-1"
@@ -474,6 +531,31 @@ repository = {
                ["cjson.util"] = "cjson\\util.lua",
                json2lua = "json2lua.lua",
                lua2json = "lua2json.lua"
+            }
+         }
+      }
+   },
+   lua_cliargs = {
+      ["3.0.2-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               cliargs = "cliargs.lua",
+               ["cliargs.config_loader"] = "cliargs\\config_loader.lua",
+               ["cliargs.constants"] = "cliargs\\constants.lua",
+               ["cliargs.core"] = "cliargs\\core.lua",
+               ["cliargs.parser"] = "cliargs\\parser.lua",
+               ["cliargs.printer"] = "cliargs\\printer.lua",
+               ["cliargs.utils.disect"] = "cliargs\\utils\\disect.lua",
+               ["cliargs.utils.disect_argument"] = "cliargs\\utils\\disect_argument.lua",
+               ["cliargs.utils.filter"] = "cliargs\\utils\\filter.lua",
+               ["cliargs.utils.lookup"] = "cliargs\\utils\\lookup.lua",
+               ["cliargs.utils.shallow_copy"] = "cliargs\\utils\\shallow_copy.lua",
+               ["cliargs.utils.split"] = "cliargs\\utils\\split.lua",
+               ["cliargs.utils.trim"] = "cliargs\\utils\\trim.lua",
+               ["cliargs.utils.wordwrap"] = "cliargs\\utils\\wordwrap.lua"
             }
          }
       }
