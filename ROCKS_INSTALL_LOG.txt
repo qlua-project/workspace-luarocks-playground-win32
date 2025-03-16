@@ -348,3 +348,12 @@ luacheck 1.2.0-1 is now installed in .\luarocks/systree (license: MIT)
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+> luarocks install mediator_lua
+Installing https://luarocks.org/mediator_lua-1.1.2-0.rockspec
+
+
+mediator_lua 1.1.2-0 depends on lua >= 5.1 (5.4-1 provided by VM: success)
+mediator_lua 1.1.2-0 is now installed in .\luarocks/systree (license: MIT <http://opensource.org/licenses/MIT>)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
