@@ -249,6 +249,21 @@ dependencies = {
          }
       }
    },
+   mediator_lua = {
+      ["1.1.2-0"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
    ["multipart-post"] = {
       ["1.4-1"] = {
          {
@@ -538,6 +553,9 @@ modules = {
    },
    ["luacheck.version"] = {
       "luacheck/1.2.0-1"
+   },
+   mediator = {
+      "mediator_lua/1.1.2-0"
    },
    mime = {
       "luasocket/3.1.0-1"
@@ -947,6 +965,18 @@ repository = {
             dependencies = {},
             modules = {
                ["lua-utf8"] = "lua-utf8.dll"
+            }
+         }
+      }
+   },
+   mediator_lua = {
+      ["1.1.2-0"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               mediator = "mediator.lua"
             }
          }
       }
