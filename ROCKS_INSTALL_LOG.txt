@@ -319,3 +319,12 @@ Error: Build error: Failed building.
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+> luarocks install date
+Installing https://luarocks.org/date-2.2.1-1.src.rock
+
+
+date 2.2.1-1 depends on lua >= 5.0, < 5.5 (5.4-1 provided by VM: success)
+date 2.2.1-1 is now installed in .\luarocks/systree (license: MIT)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
