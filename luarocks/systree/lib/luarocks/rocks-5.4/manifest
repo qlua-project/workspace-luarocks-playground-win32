@@ -28,6 +28,27 @@ dependencies = {
          }
       }
    },
+   date = {
+      ["2.2.1-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 0, string = "5.0"
+                  }
+               },
+               {
+                  op = "<",
+                  version = {
+                     5, 5, string = "5.5"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
    dkjson = {
       ["2.8-1"] = {
          {
@@ -268,6 +289,9 @@ modules = {
    ["cliargs.utils.wordwrap"] = {
       "lua_cliargs/3.0.2-1"
    },
+   date = {
+      "date/2.2.1-1"
+   },
    dkjson = {
       "dkjson/2.8-1"
    },
@@ -464,6 +488,18 @@ repository = {
             dependencies = {},
             modules = {
                argparse = "argparse.lua"
+            }
+         }
+      }
+   },
+   date = {
+      ["2.2.1-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               date = "date.lua"
             }
          }
       }
