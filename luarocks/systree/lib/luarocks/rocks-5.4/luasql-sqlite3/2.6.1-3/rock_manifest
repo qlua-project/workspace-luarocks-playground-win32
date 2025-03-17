@@ -1,0 +1,36 @@
+rock_manifest = {
+   doc = {
+      br = {
+         ["examples.html"] = "d25d4c90449060b9d8550768a4dd7249",
+         ["history.html"] = "3d4a7b1cf422790ceed7a7aaa899b65e",
+         ["index.html"] = "947b2d2c16af65fee4ac9513e383bf6b",
+         ["license.html"] = "eb3b633e4a34d0400117e3382acd74b0",
+         ["luasql.png"] = "a858d251851675daefb731baacafd1b8",
+         ["manual.html"] = "a7093224bb937d455eec8dd58bfcc4c6"
+      },
+      fr = {
+         ["doc.css"] = "48acc5941158a949d00df85b1fa45b4d",
+         ["examples.html"] = "bf10d19c077fd86287693ed5a17998b5",
+         ["history.html"] = "f851e02f765618fbc43fa49ff6772ea4",
+         ["index.html"] = "91aee12a35cdedb5671208929b4f4f24",
+         ["license.html"] = "863f4fb35c2b2fb3d213ce8d9c1641ae",
+         ["luasql.png"] = "a858d251851675daefb731baacafd1b8",
+         ["manual.html"] = "11fa47f7192d71c5f110a8805722e470"
+      },
+      us = {
+         ["doc.css"] = "0e74a50decf015a34fa46f218b8d7c60",
+         ["examples.html"] = "2ee718800b479a4b7f3077683733d750",
+         ["history.html"] = "e455cd8ee317a5ca34c25558f3972ef3",
+         ["index.html"] = "f74ba7fbae558870cce43526c2281172",
+         ["license.html"] = "82e7403fa1bc359e79b19b645e065f61",
+         ["luasql.png"] = "a858d251851675daefb731baacafd1b8",
+         ["manual.html"] = "c70f5d4d6cfb1775c1b99a6c7b3b3fe0"
+      }
+   },
+   lib = {
+      luasql = {
+         ["sqlite3.dll"] = "a412d588e2ea803bc65057b1eeace35e"
+      }
+   },
+   ["luasql-sqlite3-2.6.1-3.rockspec"] = "122c7db235faa2291bc2d442ff724923"
+}
