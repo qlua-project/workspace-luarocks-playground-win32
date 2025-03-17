@@ -271,6 +271,23 @@ Error: Could not find header file for SQLITE
 You may have to install SQLITE in your system and/or pass SQLITE_DIR or SQLITE_INCDIR to the luarocks command.
 Example: luarocks install luasql-sqlite3 SQLITE_DIR=/usr/local
 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+> luarocks install luasql-sqlite3 SQLITE_DIR=..\external_sqlite
+
+
+luasql-sqlite3 2.6.1-3 depends on lua >= 5.1 (5.4-1 provided by VM: success)
+cl /nologo /MD /O2 -c -Fosrc/luasql.obj -I.\externals\lua\include src/luasql.c -I..\external_sqlite\include
+luasql.c
+cl /nologo /MD /O2 -c -Fosrc/ls_sqlite3.obj -I.\externals\lua\include src/ls_sqlite3.c -I..\external_sqlite\include
+ls_sqlite3.c
+link -dll -def:sqlite3.def -out:%TEMP%\luarocks_build-LuaSQL-SQLite3-2.6.1-3-4569769\luasql\sqlite3.dll .\externals\lua\lib\lua54.lib src/luasql.obj src/ls_sqlite3.obj -libpath:..\external_sqlite\lib sqlite3.lib
+Microsoft (R) Incremental Linker Version 14.43.34808.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+   Creating library %TEMP%\luarocks_build-LuaSQL-SQLite3-2.6.1-3-4569769\luasql\sqlite3.lib and object %TEMP%\luarocks_build-LuaSQL-SQLite3-2.6.1-3-4569769\luasql\sqlite3.exp
+luasql-sqlite3 2.6.1-3 is now installed in .\luarocks/systree (license: MIT/X11)
+
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 > luarocks install penlight
